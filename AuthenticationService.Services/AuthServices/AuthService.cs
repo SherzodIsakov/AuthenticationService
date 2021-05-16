@@ -1,20 +1,22 @@
 ﻿using AuthenticationBase;
 using AuthenticationBase.Models;
-using AuthenticationService.Models;
+using AuthenticationService.Entities.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Services
+namespace AuthenticationService.Services.AuthServices
 {
     public class AuthService : IAuthService
     {
         private readonly UserManager<User> _userManager;
         private readonly AppSecurity _appSecurity;
 
+        public AuthService()
+        {
+
+        }
         public AuthService(UserManager<User> userManager,
             AppSecurity appSecurity)
         {
@@ -81,6 +83,20 @@ namespace AuthenticationService.Services
                 Username = loginModel.Username,
                 Token = token
             });
+        }
+
+        public async Task<string> GetToken(LoginModel loginModel)
+        {
+            string token = string.Empty;
+            ObjectResult objectResult = await Login(loginModel);
+
+            if (objectResult != null)
+            {
+                LoginResponse loginResponse = objectResult.Value as LoginResponse;
+                token = loginResponse.Token;
+            }
+
+            return string.IsNullOrWhiteSpace(token) ? "Error token" : token;
         }
     }
 }

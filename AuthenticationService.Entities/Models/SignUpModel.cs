@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AuthenticationService.Models
+namespace AuthenticationService.Entities.Models
 {
     public class SignUpModel
     {

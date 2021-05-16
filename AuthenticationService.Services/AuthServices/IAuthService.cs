@@ -1,8 +1,8 @@
-﻿using AuthenticationService.Models;
+﻿using AuthenticationService.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Services
+namespace AuthenticationService.Services.AuthServices
 {
     public interface IAuthService
     {

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\AuthenticationBase\AuthenticationBase\AuthenticationBase.csproj" />
+    <ProjectReference Include="..\AuthenticationService.Services\AuthenticationService.Services.csproj" />
   </ItemGroup>
 
 </Project>

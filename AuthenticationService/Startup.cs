@@ -1,6 +1,6 @@
 using AuthenticationBase;
 using AuthenticationBase.Extensions;
-using AuthenticationService.Services;
+using AuthenticationService.Services.AuthServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

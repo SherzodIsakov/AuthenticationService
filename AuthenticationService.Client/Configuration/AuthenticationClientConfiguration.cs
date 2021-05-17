@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Refit;
 using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace AuthenticationService.Client.Configuration
 {
@@ -29,7 +30,8 @@ namespace AuthenticationService.Client.Configuration
         {
             var refitSettings = new RefitSettings
             {
-                AuthorizationHeaderValueGetter = () => new AuthService().GetToken(new LoginModel { Username = "QWE", Password = "QweAsd123!" })
+                AuthorizationHeaderValueGetter = () => Task.FromResult(configuration["Token"])
+                //AuthorizationHeaderValueGetter = () => new AuthService().GetToken(new LoginModel { Username = "QWE", Password = "QweAsd123!" })
             };
 
             services.AddApiClient<IAuthenticationClient>(configuration, refitSettings, "ServiceUrls:AuthenticationService");

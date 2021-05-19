@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\AuthenticationBase\AuthenticationBase\AuthenticationBase.csproj" />
-    <ProjectReference Include="..\AuthenticationService.Entities\AuthenticationService.Entities.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
-﻿using AuthenticationService.Entities.Models;
-using AuthenticationService.Services;
+﻿using AuthenticationBase.Models;
 using AuthenticationService.Services.AuthServices;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;

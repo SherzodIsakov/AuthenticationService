@@ -1,6 +1,4 @@
 ﻿using AuthenticationBase.Extensions;
-using AuthenticationService.Entities.Models;
-using AuthenticationService.Services.AuthServices;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;

@@ -1,4 +1,4 @@
-﻿using AuthenticationService.Entities.Models;
+﻿using AuthenticationBase.Models;
 using Microsoft.AspNetCore.Mvc;
 using Refit;
 using System.Threading.Tasks;

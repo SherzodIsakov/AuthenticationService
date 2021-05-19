@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthenticationService.Entities\AuthenticationService.Entities.csproj" />
     <ProjectReference Include="..\AuthenticationService.Services\AuthenticationService.Services.csproj" />
   </ItemGroup>
 

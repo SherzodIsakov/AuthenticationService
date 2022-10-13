@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{28501E40-0454-4A55-B076-E87B9247B234}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Client", "AuthenticationService.Client\AuthenticationService.Client.csproj", "{3A26B6AA-534F-44E9-9281-2216518FB1C1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Services", "AuthenticationService.Services\AuthenticationService.Services.csproj", "{6C289B64-C68D-49E6-8828-8B56F00A3E65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Entities", "AuthenticationService.Entities\AuthenticationService.Entities.csproj", "{C990425F-2D5E-45A2-9FFB-F215C86A1220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6C289B64-C68D-49E6-8828-8B56F00A3E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C289B64-C68D-49E6-8828-8B56F00A3E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C289B64-C68D-49E6-8828-8B56F00A3E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C990425F-2D5E-45A2-9FFB-F215C86A1220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C990425F-2D5E-45A2-9FFB-F215C86A1220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C990425F-2D5E-45A2-9FFB-F215C86A1220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C990425F-2D5E-45A2-9FFB-F215C86A1220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

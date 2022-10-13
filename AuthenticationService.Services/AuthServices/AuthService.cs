@@ -1,5 +1,6 @@
 ﻿using AuthenticationBase;
 using AuthenticationBase.Models;
+using AuthenticationService.Entities.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
